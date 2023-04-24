@@ -9,9 +9,9 @@ class ProductsController < ApplicationController
     @product = @category.products.create(product_params.merge(user_id: current_user.id))
 
     if @product.persisted?
-      redirect_to category_path(@category), notice: "Successfully created a product"
+      redirect_to category_path(@category), notice: 'Successfully created a product'
     else
-      flash.now[:alert] = "Failed to create a product"
+      flash.now[:alert] = 'Failed to create a product'
     end
   end
 
@@ -20,9 +20,9 @@ class ProductsController < ApplicationController
     @product = @category.products.find(params[:id])
 
     if @product.destroy
-      redirect_to category_path(@category), notice: "Successfully deleted the product"
+      redirect_to category_path(@category), notice: 'Successfully deleted the product'
     else
-      redirect_to category_path(@category), alert: "Failed to delete the product"
+      redirect_to category_path(@category), alert: 'Failed to delete the product'
     end
   end
 end
