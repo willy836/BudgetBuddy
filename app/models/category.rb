@@ -5,4 +5,12 @@ class Category < ApplicationRecord
     has_one_attached :image
 
     validates :name, presence: true
+
+    def total_amount
+        products.sum(:amount)
+    end
+
+    def recent_products
+        products.order(created_at: :desc)
+    end
 end
