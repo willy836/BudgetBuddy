@@ -2,12 +2,12 @@ class CategoriesController < ApplicationController
   before_action :authenticate_user!, :set_user, only: [:index, :show, :new]
 
   def index
-    @categories = @user.categories.includes(:records)
+    @categories = @user.categories.includes(:products)
   end
 
   def show
     @category = @user.categories.find(params[:id])
-    @records = @category.records.order(created_at: :desc)
+    @products = @category.products.order(created_at: :desc)
   end
 
   def new
