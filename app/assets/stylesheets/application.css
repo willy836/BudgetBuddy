@@ -1,15 +1,109 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "font-awesome";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -----------------------NAVBAR------------------- */
+
+.nav {
+  background: #3778c2;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+nav a {
+  color: #fff;
+}
+
+.nav-links {
+  padding: 20px;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* -------------------------SPLASH--------------------- */
+.splash-section {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.splash-h1 {
+  margin-top: 50vw;
+}
+
+.splash-btn-div {
+  width: 100%;
+}
+
+.btn {
+  width: 100%;
+  background: #3778c2;
+  padding: 15px 40vw;
+  border: none;
+}
+
+.btn-sign-up {
+  background: #fff;
+  color: #434b54;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-sign-up a {
+  color: #434b54;
+}
+
+/* ------------------------SIGN UP------------------------- */
+
+.sign-up-section {
+  /* border: 1px solid blue; */
+  padding: 50px 10px;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+}
+
+.devise-btn {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* --------------------------------------LOG IN----------------------------------- */
+
+.login-section {
+  padding: 50px 10px;
+}
