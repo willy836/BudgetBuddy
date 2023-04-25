@@ -1,0 +1,11 @@
+<nav class="nav">
+  <div class="hamburger">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </div>
+  <h1 class="categories-h1"><%= h1_content %></h1>
+  <ul>
+    <li class="nav-link sign-out"><%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn-sign-out" %></li>
+  </ul>
+</nav>
