@@ -1,0 +1,12 @@
+<article class="cat-container">
+  <div class="cat-img">
+    <%= image_tag(category.image) %>
+  </div>
+  <div class="cat-text">
+    <div class="cat-name-amount">
+      <p class="cat-name"><%= category.name.capitalize %></p>
+      <h2 class="cat-amount">$ <%= category.total_amount %></h2>
+    </div>
+    <p class="cat-created-at"><%= category.created_at %></p>
+  </div>
+</article>

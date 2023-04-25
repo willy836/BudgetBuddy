@@ -1,2 +1,28 @@
-<h1>Products#new</h1>
-<p>Find me in app/views/products/new.html.erb</p>
+<%= render partial: 'shared/nav', locals: { h1_content: "ADD TRANSACTION" } %>
+<section class="add-transaction-section">
+  <%= form_with model: @product, url: category_products_path(@category), local: true, scope: :product do |form| %>
+    <div class="form-group">
+      <%= form.label :name %>
+      <%= form.text_field :name, placeholder: "Enter name of record", class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= form.label :amount %>
+      <%= form.number_field :amount, placeholder: "Enter amount", class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= form.label :categories, "Select Category/ Categories" %>
+      <%= form.collection_check_boxes :category_ids, Category.where(user_id: current_user.id), :id, :name do |category| %>
+        <div>
+          <%= category.check_box%>
+          <%= category.label %>
+        </div>
+      <% end %>
+    </div>
+    <div>
+      <%= form.submit "Save", class: "new-transaction-save-btn" %>
+    </div>
+  <% end %>
+  <div class="new-transaction-back-div">
+    <button class="new-transaction-back-btn"><%= link_to "Back", category_path(@category), class: "new-transaction-back-link" %></button>
+  </div>
+</section>

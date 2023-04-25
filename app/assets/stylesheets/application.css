@@ -7,11 +7,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* -----------------------NAVBAR------------------- */
 
 .nav {
+  font-family: "Lato", sans-serif;
   background: #3778c2;
   color: #fff;
   display: flex;
@@ -39,6 +41,25 @@ nav a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  margin: 4px auto;
+}
+
+.btn-sign-out {
+  padding: 2px 4px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
 }
 
 /* -------------------------SPLASH--------------------- */
@@ -83,7 +104,6 @@ nav a {
 /* ------------------------SIGN UP------------------------- */
 
 .sign-up-section {
-  /* border: 1px solid blue; */
   padding: 50px 10px;
 }
 
@@ -106,4 +126,216 @@ nav a {
 
 .login-section {
   padding: 50px 10px;
+}
+
+/* -------------------------NOTICE/ALERT-------------------------- */
+
+.notice {
+  color: green;
+}
+
+.alert {
+  color: red;
+}
+
+/* ------------------------CATEGORIES------------------------------ */
+
+.categories-section {
+  font-family: "Lato", sans-serif;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding: 20px 0;
+  background: #eee;
+}
+
+.categories-h1 {
+  font-size: 25px;
+}
+
+.cat-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.cat-img {
+  width: 20%;
+  height: 30%;
+}
+
+.cat-text {
+  width: 77%;
+}
+
+.cat-name-amount {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-bottom: 5px;
+}
+
+.cat-name {
+  font-size: 18px;
+  color: #888;
+}
+
+.cat-amount {
+  font-size: 22px;
+  color: #000;
+}
+
+.cat-created-at {
+  font-size: 13px;
+  color: #bbb;
+}
+
+.cat-img img {
+  width: 100%;
+}
+
+.upload-image {
+  width: 10%;
+}
+
+.btn-container {
+  display: flex;
+  justify-self: center;
+  background: #5fb523;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.add-new-cat-btn {
+  padding: 10px 30vw;
+  width: 95%;
+  margin: 10px auto;
+  background: #5fb523;
+  border: 2px solid #fff;
+}
+
+.add-new-cat-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.destroy-btn-div {
+  margin: 0 10px;
+}
+
+.destroy-btn {
+  padding: 5px 10px;
+  background: #3778c2;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+hr {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.link-div {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.back-link,
+.add-product-link {
+  padding: 8px 15px;
+  background: #3778c2;
+  color: #fff;
+}
+
+.all-transactions {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #eee;
+}
+
+.transaction {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+/* ------------------NEW CATEGORY--------------------- */
+
+.new-category-section {
+  font-family: "Lato", sans-serif;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 5px;
+}
+
+.new-cat-back-div {
+  margin: 10px 0;
+}
+
+.new-cat-save-btn,
+.new-cat-back-btn {
+  padding: 5px 15px;
+  background: #3778c2;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.new-cat-back-link {
+  color: #fff;
+}
+
+/* --------------------ADD TRANSACTION-------------------- */
+
+.transactions-section {
+  font-family: "Lato", sans-serif;
+}
+
+.add-transaction-section {
+  font-family: "Lato", sans-serif;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.new-transaction-back-div {
+  margin: 10px 0;
+}
+
+.new-transaction-save-btn,
+.new-transaction-back-btn {
+  padding: 5px 15px;
+  background: #3778c2;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.new-transaction-back-link {
+  color: #fff;
 }

@@ -1,2 +1,20 @@
-<h1>Categories#new</h1>
-<p>Find me in app/views/categories/new.html.erb</p>
+<%= render partial: 'shared/nav', locals: { h1_content: "NEW CATEGORY" } %>
+<section class="new-category-section">
+  <%= form_with model: @category, url: categories_path, local: true, scope: :category, data: { turbo: false } do |form| %>
+    <div class="form-group">
+      <%= form.label :name %>
+      <%= form.text_field :name, placeholder: "Enter category name", class: "form-control" %>
+    </div>
+    <p>Upload an image</p>
+    <div class="form-group image-div">
+      <%= form.label :image %>
+      <%= form.file_field :image %>
+    </div>
+    <div class="new-cat-save-div">
+      <%= form.submit "Save", class: "new-cat-save-btn" %>
+    </div>
+  <% end %>
+  <div class="new-cat-back-div">
+    <button class="new-cat-back-btn"><%= link_to "Back", categories_path, class: "new-cat-back-link" %></button>
+  </div>
+</section>
