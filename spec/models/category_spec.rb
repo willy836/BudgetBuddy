@@ -1,7 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Category, type: :model do
-    subject { Category.new(name: 'John Restaurant') }
+    user = User.create(name: 'John Doe', email: 'johndoe@gmail.com', password: 'john123')
+    subject do
+        Category.new(name: 'Nando Restaurant')
+    end
 
     before { subject.save }
 
