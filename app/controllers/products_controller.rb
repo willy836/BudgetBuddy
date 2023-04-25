@@ -25,4 +25,10 @@ class ProductsController < ApplicationController
       redirect_to category_path(@category), alert: 'Failed to delete the product'
     end
   end
+
+  private
+
+  def product_params
+    params.require(:product).permit(:name, :amount)
+  end
 end
