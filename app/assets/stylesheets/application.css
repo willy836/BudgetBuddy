@@ -282,3 +282,66 @@ hr {
 
   border-radius: 5px;
 }
+
+/* ------------------NEW CATEGORY--------------------- */
+
+.new-category-section {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.new-category-h1 {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 5px;
+}
+
+.new-cat-back-div {
+  margin: 10px 0;
+}
+
+.new-cat-save-btn,
+.new-cat-back-btn {
+  padding: 5px 15px;
+  background: #3778c2;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.new-cat-back-link {
+  color: #fff;
+}
+
+/* --------------------ADD TRANSACTION-------------------- */
+
+.add-transaction-section {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.new-transaction-back-div {
+  margin: 10px 0;
+}
+
+.new-transaction-save-btn,
+.new-transaction-back-btn {
+  padding: 5px 15px;
+  background: #3778c2;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+}
+
+.new-transaction-back-link {
+  color: #fff;
+}
