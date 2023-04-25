@@ -235,15 +235,50 @@ nav a {
   text-decoration: none;
 }
 
+.destroy-btn-div {
+  margin: 0 10px;
+}
+
+.destroy-btn {
+  padding: 5px 10px;
+  background: #3778c2;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
 hr {
   margin: 10px;
   margin-bottom: 20px;
 }
 
-.add-product-link {
-  /* border: 1px solid blue; */
-  padding: 8px 15px;
+.link-div {
   margin: 10px;
+  margin-bottom: 20px;
+}
+
+.back-link,
+.add-product-link {
+  padding: 8px 15px;
   background: #3778c2;
   color: #fff;
+}
+
+.all-transactions {
+  margin: 10px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #eee;
+}
+
+.transaction {
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 5px;
 }

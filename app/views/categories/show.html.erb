@@ -1,12 +1,16 @@
 <%= render partial: 'shared/nav', locals: { h1_content: "TRANSACTIONS" } %>
 <section class="transactions-section">
-  <%= render partial: "shared/category", locals: { category: @category } %>
+  <div class="single-cat">
+    <%= render partial: "shared/category", locals: { category: @category } %>
+    <div class="destroy-btn-div"><%= button_to "Destroy", category_path(@category), method: :delete, onclick: "return confirm('Are you sure?')", class: "destroy-btn" %></div>
+  </div>
   <hr>
-  <%= link_to "Add Transaction", new_category_product_path(@category), class: "add-product-link" %>
-  <div class="all-products">
+  <div class="link-div"><%= link_to "Back", categories_path, class: "back-link" %></div>
+  <div class="link-div"><%= link_to "Add Transaction", new_category_product_path(@category), class: "add-product-link" %></div>
+  <div class="all-transactions">
     <% @products.each do |product| %>
-      <article>
-        <p><%= product.name %></p>
+      <article class="transaction">
+        <p><%= product.name.capitalize %></p>
         <p><%= product.amount %></p>
       </article>
     <% end %>
