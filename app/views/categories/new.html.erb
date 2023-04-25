@@ -1,6 +1,5 @@
 <%= render partial: 'shared/nav', locals: { h1_content: "NEW CATEGORY" } %>
 <section class="new-category-section">
-  <h1 class="new-category-h1">Add New Category</h1>
   <%= form_with model: @category, url: categories_path, local: true, scope: :category, data: { turbo: false } do |form| %>
     <div class="form-group">
       <%= form.label :name %>

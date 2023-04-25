@@ -13,6 +13,7 @@
 /* -----------------------NAVBAR------------------- */
 
 .nav {
+  font-family: "Lato", sans-serif;
   background: #3778c2;
   color: #fff;
   display: flex;
@@ -103,7 +104,6 @@ nav a {
 /* ------------------------SIGN UP------------------------- */
 
 .sign-up-section {
-  /* border: 1px solid blue; */
   padding: 50px 10px;
 }
 
@@ -159,10 +159,8 @@ nav a {
 .cat-container {
   display: flex;
   justify-content: space-between;
-
   align-items: center;
   padding: 10px;
-  /* border: 2px solid red; */
   background: #fff;
   width: 95%;
   margin: 0 auto;
@@ -211,23 +209,22 @@ nav a {
 }
 
 .btn-container {
-  /* border: 1px solid red; */
   display: flex;
   justify-self: center;
-  background: #eee;
+  background: #5fb523;
   width: 100%;
   height: 10vh;
   text-align: center;
-  padding: 0 10px;
   position: absolute;
   bottom: 0;
 }
 
 .add-new-cat-btn {
-  padding: 15px 32vw;
-  width: 100%;
+  padding: 10px 30vw;
+  width: 95%;
+  margin: 10px auto;
   background: #5fb523;
-  border: none;
+  border: 2px solid #fff;
 }
 
 .add-new-cat-btn a {
@@ -286,14 +283,9 @@ hr {
 /* ------------------NEW CATEGORY--------------------- */
 
 .new-category-section {
+  font-family: "Lato", sans-serif;
   width: 90%;
   margin: 30px auto;
-}
-
-.new-category-h1 {
-  text-align: center;
-  padding: 5px;
-  margin-bottom: 10px;
 }
 
 .form-group {
@@ -324,7 +316,12 @@ hr {
 
 /* --------------------ADD TRANSACTION-------------------- */
 
+.transactions-section {
+  font-family: "Lato", sans-serif;
+}
+
 .add-transaction-section {
+  font-family: "Lato", sans-serif;
   width: 90%;
   margin: 30px auto;
 }
