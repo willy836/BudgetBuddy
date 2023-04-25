@@ -179,7 +179,6 @@ nav a {
 
 .cat-name-amount {
   display: flex;
-
   justify-content: space-between;
   padding: 10px 0;
   margin-bottom: 5px;
@@ -264,7 +263,6 @@ hr {
 .all-transactions {
   margin: 10px;
   padding: 10px;
-
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -276,7 +274,6 @@ hr {
   padding: 10px;
   display: flex;
   justify-content: space-between;
-
   border-radius: 5px;
 }
 
