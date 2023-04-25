@@ -234,3 +234,16 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+
+hr {
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.add-product-link {
+  /* border: 1px solid blue; */
+  padding: 8px 15px;
+  margin: 10px;
+  background: #3778c2;
+  color: #fff;
+}

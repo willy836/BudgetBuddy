@@ -1,2 +1,14 @@
-<h1>Categories#show</h1>
-<p>Find me in app/views/categories/show.html.erb</p>
+<%= render partial: 'shared/nav', locals: { h1_content: "TRANSACTIONS" } %>
+<section class="transactions-section">
+  <%= render partial: "shared/category", locals: { category: @category } %>
+  <hr>
+  <%= link_to "Add Transaction", new_category_product_path(@category), class: "add-product-link" %>
+  <div class="all-products">
+    <% @products.each do |product| %>
+      <article>
+        <p><%= product.name %></p>
+        <p><%= product.amount %></p>
+      </article>
+    <% end %>
+  </div>
+</section>
