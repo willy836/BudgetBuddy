@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* -----------------------NAVBAR------------------- */
@@ -39,6 +40,25 @@ nav a {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  margin: 4px auto;
+}
+
+.btn-sign-out {
+  padding: 2px 4px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
 }
 
 /* -------------------------SPLASH--------------------- */
@@ -106,4 +126,111 @@ nav a {
 
 .login-section {
   padding: 50px 10px;
+}
+
+/* -------------------------NOTICE/ALERT-------------------------- */
+
+.notice {
+  color: green;
+}
+
+.alert {
+  color: red;
+}
+
+/* ------------------------CATEGORIES------------------------------ */
+
+.categories-section {
+  font-family: "Lato", sans-serif;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding: 20px 0;
+  background: #eee;
+}
+
+.categories-h1 {
+  font-size: 25px;
+}
+
+.cat-container {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 10px;
+  /* border: 2px solid red; */
+  background: #fff;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.cat-img {
+  width: 20%;
+  height: 30%;
+}
+
+.cat-text {
+  width: 77%;
+}
+
+.cat-name-amount {
+  display: flex;
+
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-bottom: 5px;
+}
+
+.cat-name {
+  font-size: 18px;
+  color: #888;
+}
+
+.cat-amount {
+  font-size: 22px;
+  color: #000;
+}
+
+.cat-created-at {
+  font-size: 13px;
+  color: #bbb;
+}
+
+.cat-img img {
+  width: 100%;
+}
+
+.upload-image {
+  width: 10%;
+}
+
+.btn-container {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-self: center;
+  background: #eee;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  padding: 0 10px;
+  position: absolute;
+  bottom: 0;
+}
+
+.add-new-cat-btn {
+  padding: 15px 32vw;
+  width: 100%;
+  background: #5fb523;
+  border: none;
+}
+
+.add-new-cat-btn a {
+  color: #fff;
+  text-decoration: none;
 }
