@@ -7,6 +7,6 @@
       <p class="cat-name"><%= category.name.capitalize %></p>
       <h2 class="cat-amount">$ <%= category.total_amount %></h2>
     </div>
-    <p class="cat-created-at"><%= category.created_at %></p>
+    <p class="cat-created-at"><%= category.created_at.strftime('%m/%d/%Y') %></p>
   </div>
 </article>
