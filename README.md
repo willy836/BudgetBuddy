@@ -6,6 +6,8 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Video Demo ](#-live-demo-)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -54,6 +56,22 @@
 - **[Login/ Registration page]**
 - **[Categories page]**
 - **[Transactions page]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live demo link](https://budget-buddy-l3y7.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- VIDEO DEMO -->
+
+## 💻 Video Demo <a name="live-demo"></a>
+
+- [Video demo link](https://www.loom.com/share/66c44df171ba436ab9d5855919cf8ed9)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
