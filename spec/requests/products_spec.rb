@@ -1,5 +1,3 @@
-require 'rails_helper'
-
 RSpec.describe ProductsController, type: :request do
     describe 'GET /new' do
         let(:user) { User.create!(name: 'Jane Doe', email: 'janedoe@gmail.com', password: 'jane123') }
@@ -17,4 +15,3 @@ RSpec.describe ProductsController, type: :request do
       end
     end
   end
-  
